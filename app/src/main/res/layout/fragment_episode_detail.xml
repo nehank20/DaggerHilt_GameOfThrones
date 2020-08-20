@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.EpisodeDetailFragment">
+
+
+    <ImageView
+        android:id="@+id/tvEpisodeImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/placeholder_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <TextView
+
+        android:id="@+id/tvEpisodeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Episode Name"
+        android:textColor="@color/colorBlack"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEpisodeImage" />
+
+
+    <ImageView
+        android:id="@+id/ivEpisodeSeason"
+        android:src="@drawable/ic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEpisodeName"/>
+
+    <ImageView
+        android:src="@drawable/ic_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEpisodeName"/>
+
+
+    <TextView
+        android:id="@+id/labelEpisodeSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Season "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEpisodeSeason"
+        app:layout_constraintStart_toEndOf="@+id/ivEpisodeSeason"
+        app:layout_constraintTop_toTopOf="@+id/ivEpisodeSeason" />
+
+    <TextView
+        android:id="@+id/tvEpisodeSeason"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelEpisodeSeason"
+        app:layout_constraintStart_toEndOf="@id/labelEpisodeSeason"
+        app:layout_constraintTop_toTopOf="@+id/labelEpisodeSeason" />
+
+    <TextView
+        android:id="@+id/labelEpisodeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Epi. "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelEpisodeSeason"
+        app:layout_constraintStart_toEndOf="@id/tvEpisodeSeason"
+        app:layout_constraintTop_toTopOf="@+id/labelEpisodeSeason" />
+
+    <TextView
+        android:id="@+id/tvEpisodeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/labelEpisodeSeason"
+        app:layout_constraintStart_toEndOf="@id/labelEpisodeNumber"
+        app:layout_constraintTop_toTopOf="@+id/labelEpisodeSeason" />
+
+
+    <ImageView
+        android:id="@+id/ivEpisodeMins"
+        android:src="@drawable/ic_total_mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelEpisodeSeason"/>
+
+
+    <TextView
+        android:id="@+id/labelEpisodeMins"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" mins"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvEpisodeMins"
+        app:layout_constraintStart_toEndOf="@+id/tvEpisodeMins"
+        app:layout_constraintTop_toTopOf="@+id/tvEpisodeMins" />
+
+    <TextView
+        android:id="@+id/tvEpisodeMins"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="60"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivEpisodeMins"
+        app:layout_constraintStart_toEndOf="@+id/ivEpisodeMins"
+        app:layout_constraintTop_toTopOf="@+id/ivEpisodeMins"
+
+
+         />
+
+
+    <ImageView
+        android:id="@+id/ivReleasedOn"
+        android:src="@drawable/ic_released_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labelEpisodeMins"/>
+
+    <TextView
+        android:id="@+id/labelReleasedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Released on "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivReleasedOn"
+        app:layout_constraintStart_toEndOf="@+id/ivReleasedOn"
+        app:layout_constraintTop_toTopOf="@+id/ivReleasedOn" />
+
+    <TextView
+        android:id="@+id/tvReleasedOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="21st"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivReleasedOn"
+        app:layout_constraintStart_toEndOf="@+id/labelReleasedOn"
+        app:layout_constraintTop_toTopOf="@+id/ivReleasedOn" />
+
+
+    <TextView
+        android:id="@+id/tvEpisodeSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Summary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivReleasedOn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
